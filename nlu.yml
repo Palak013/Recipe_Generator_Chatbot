@@ -1,0 +1,74 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Hey there, I need some cooking ideas!
+      - Hello! Can you help me with a recipe?
+      - Hi! I'm looking for something delicious to make.
+      - Good morning! What’s on the menu today?
+      - Yo, got any good recipes for me?
+      - Hey bot, help me cook something new.
+
+  - intent: goodbye
+    examples: |
+      - Thanks, that recipe sounds great! Bye.
+      - Catch you later, I’ll try cooking that!
+      - Goodbye, I’ll come back for more ideas soon.
+      - Thanks for the help! See you next time.
+      - Appreciate it! I’m off to cook now.
+
+  - intent: affirm
+    examples: |
+      - Yes! That sounds delicious.
+      - Definitely, I love that idea.
+      - Absolutely, I’ll try that recipe.
+      - Of course, I was looking for something like this.
+      - Great choice! Let’s go with that.
+
+  - intent: deny
+    examples: |
+      - No, I don’t have that ingredient.
+      - Nope, I want something else.
+      - Nah, that’s not what I had in mind.
+      - I’d rather cook something different.
+      - Not really, got another suggestion?
+
+  - intent: mood_great
+    examples: |
+      - I’m super excited to cook today!
+      - Cooking is my favorite thing to do.
+      - This recipe idea is amazing, thanks!
+      - I love trying new dishes.
+      - Today feels like a perfect day to cook.
+
+  - intent: mood_unhappy
+    examples: |
+      - I have no idea what to cook today.
+      - Ugh, I’m so bored of eating the same food.
+      - Cooking is stressful sometimes.
+      - I need a quick and easy meal, feeling lazy.
+      - Nothing turns out the way I want it to.
+
+  - intent: bot_challenge
+    examples: |
+      - Are you a real chef or a bot?
+      - How do you know all these recipes?
+      - Can you actually cook?
+      - Are these recipes AI-generated?
+      - Have you ever tasted food before?
+
+  - intent: request_recipe
+    examples: |
+      - I have some [chicken](ingredient) and [lemon](ingredient). What should I cook?
+      - Can you suggest a dish using [tomatoes](ingredient) and [basil](ingredient)?
+      - What’s a good recipe for [salmon](ingredient) and [garlic](ingredient)?
+      - I need a quick recipe with [rice](ingredient) and [vegetables](ingredient).
+      - Show me a dessert I can make with [chocolate](ingredient) and [milk](ingredient).
+      - Recommend a dish with [potatoes](ingredient) and [cheese](ingredient).
+      - I want to make an Indian dish with [paneer](ingredient) and [spinach](ingredient).
+      - Help me cook a Mexican dish using [avocado](ingredient) and [lime](ingredient).
+      - What can I cook with [pasta](ingredient) and [olive oil](ingredient)?
+      - Suggest a healthy meal with [quinoa](ingredient) and [bell peppers](ingredient).
+      - Give me a soup recipe with [carrots](ingredient) and [ginger](ingredient).
+      - How can I make a spicy dish with [chili](ingredient) and [garlic](ingredient)?
