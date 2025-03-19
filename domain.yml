@@ -1,0 +1,66 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - request_recipe
+
+entities:
+  - ingredient
+
+slots:
+  ingredient:
+    type: list
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: ingredient
+
+responses:
+  utter_happy:
+    - text: "I'm glad to hear that! 😊"
+
+  utter_iamabot:
+    - text: "Yes, I am a virtual assistant created to help you with recipes!"
+
+  utter_greet:
+    - text: "Hey there! Ready to whip up something tasty?"
+
+  utter_goodbye:
+    - text: "See you later! Enjoy your meal!"
+
+  utter_affirm:
+    - text: "Great! Let’s put together a delicious meal."
+
+  utter_deny:
+    - text: "No problem! Let’s try something else."
+
+  utter_mood_great:
+    - text: "That’s fantastic! A good meal will make it even better."
+
+  utter_mood_unhappy:
+    - text: "Oh no! Maybe some comfort food will help."
+
+  utter_bot_challenge:
+    - text: "I’m a virtual assistant, but I know my way around recipes!"
+
+  utter_request_recipe:
+    - text: "With {ingredient}, you could try making [Dish Name]! Want the full recipe?"
+
+  utter_did_that_help:
+    - text: "Did that help? Let me know if you need more suggestions!"
+
+  utter_cheer_up:  # ✅ Added to fix the error
+    - text: "Don't worry, things will get better! How about a tasty recipe to lift your mood? 😊"
+
+actions:
+  - action_provide_recipe
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
